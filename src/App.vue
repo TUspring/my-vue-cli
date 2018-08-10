@@ -25,10 +25,7 @@ body,html {
     .app-main {
         width: 100%;
         height: 100%;
-        .el-main{
-            background-color:#f1f2f7;
-            /*padding:0px 30px 20px 20px;*/
-        }    
+        background-color:#f1f2f7;
     }
 }
 </style>

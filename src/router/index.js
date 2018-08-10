@@ -1,11 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../store'
-
-// 首页相关
-import Home from '@/views/home'
-
-
+import Home from '@/views/home'// 首页相关
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -32,23 +28,14 @@ const router = new VueRouter({
              component: resolve => require(['../assets/home/'], resolve),
              }, 
              {
-             path: '/details',         
-             component: resolve => require(['../assets/details/'], resolve),
-             }, 
-             {
-            path: '/test',         
+             path: '/test',         
              component: resolve => require(['../assets/test/'], resolve),
-            //  children: [
-            //           {
-            //               path:'/dashboard', //主页
-            //               component: resolve => require(['../assets/home/dashboard'], resolve),
-            //            }]
              }, 
         ]
     }]
 })
 
-// 导航钩子
+// 导航钩子(router拦截、验证是否登录)
 // router.beforeEach((to, from, next) => {
 //     // 检查登录状态，判断该路由是否需要登录权限
 //     if (to.matched.some(record => record.meta.requiresAuth)) {

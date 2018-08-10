@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api': {  
-            target: 'http://qkkapi.glook.net/',  
+            target: 'https://www.baidu.com',  
             changeOrigin: true,  
             pathRewrite: {  
                 '^/api': '/api'  

@@ -24,17 +24,4 @@ export default {
 
 <style lang="scss">
 
-.el-header {
-    background-color: #ccc;
-}
-.el-main{
-    padding:30px;
-    /*padding:4px;*/
-    padding:4px;
-    padding-bottom:100px;
-}
-.el-footer {
-    background-color: rgb( 1, 68, 97 );
-}
-
 </style>

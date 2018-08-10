@@ -1,5 +1,5 @@
 
 const state ={
-    value:'值'
+    value:''
 }
 export default state
